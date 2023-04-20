@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Facebook app</title>
+        <style>
+            body{
+                background-image: url(background.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                overflow: hidden;
+            }
+            #loginform{
+            background-color: azure;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            width: 350px;
+            height: 270px;
+            box-shadow: 0 3px 18px rgba(0,0,0,1);
+        }
+        input[type=text],input[type=password]{
+      width: 70%;
+      padding: 12px 20px;
+      margin: 6px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-left: 18%;
+      margin-bottom: 12px;
+    }
+    h2{
+        font-family:'Times New Roman', Times, serif;
+        font-size:xx-large;
+        color:#4986ff;
+        text-align: center;
+    }
+    input[type=submit] {
+      width: 50%;
+      background-color:#497be0;
+      color: white;
+      padding: 15px 15px;
+      margin-left: 83px;
+      border: none;
+      border-radius: 4px;
+      cursor:pointer;
+    }
+    #cna{
+        width: 20%;
+      background-color:#e6a613;
+      color: rgb(255, 255, 255);
+      padding: 15px 15px;
+      margin:600px;
+      margin-top: 510px;
+      border: none;
+      border-radius: 4px;
+      cursor:pointer;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="loginform">
+            <form name="lgform" action="valid1.php" method="POST">
+            <h2>Facebook Login</h2>
+            <input type="text" name="uname" required placeholder="Enter mobile/username">
+            <input type="password" name="pass" required placeholder="Enter password">
+            <input type="submit" name="login" value="Login">
+            </form>
+        </div>
+        <form name="suform" action="signup.html">
+        <input type="submit" id="cna" value="Create Account">  
+        </form>
+    </body>
+</html>
